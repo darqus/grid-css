@@ -133,9 +133,14 @@ header,
 footer {
   background-color: #000;
   color: #fff;
+}
 
-  .row {
+footer {
+  .row-2 {
     display: grid;
-    place-items: center;
+    > div:last-child {
+      display: grid;
+      justify-content: end;
+    }
   }
 }

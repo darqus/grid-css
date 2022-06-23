@@ -102,8 +102,13 @@ footer {
   background-color: #000;
   color: #fff;
 }
-header .row,
-footer .row {
+
+footer .row-2 {
   display: grid;
-  place-items: center;
+}
+footer .row-2 > div:last-child {
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
