@@ -45,18 +45,15 @@ footer {
 header,
 footer {
   .row-2 {
-    display: grid;
-    > div:last-child {
+    @include breakpoint($sm) {
       display: grid;
-      justify-content: end;
+    }
+    > div:last-child {
 
       @include breakpoint($sm) {
-        display: initial;
-        justify-content: initial;
+        display: grid;
+        justify-content: end;
       }
-    }
-    @include breakpoint($sm) {
-      display: initial;
     }
   }
 }

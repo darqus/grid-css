@@ -35,30 +35,19 @@ footer {
   color: #fff;
 }
 
-header .row-2,
+@media (min-width: 576px) {
+  header .row-2,
 footer .row-2 {
-  display: grid;
-}
-header .row-2 > div:last-child,
-footer .row-2 > div:last-child {
-  display: grid;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+    display: grid;
+  }
 }
 @media (min-width: 576px) {
   header .row-2 > div:last-child,
 footer .row-2 > div:last-child {
-    display: initial;
-    -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial;
-  }
-}
-@media (min-width: 576px) {
-  header .row-2,
-footer .row-2 {
-    display: initial;
+    display: grid;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
 }
 
