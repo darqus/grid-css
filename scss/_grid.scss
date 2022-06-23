@@ -16,7 +16,7 @@ body {
     position: relative;
     grid-area: content;
 
-   @include breakpoint(map-get($grid-breakpoints, sm)) {
+   @include breakpoint($sm) {
       overflow-y: auto;
     }
 
@@ -40,7 +40,7 @@ body {
     ". . .";
   grid-template-columns:
     1fr
-    minmax(map-get($grid-breakpoints, xs), map-get($grid-breakpoints, xl))
+    minmax($xs, $xl)
     1fr;
   grid-gap: $spacer;
 
@@ -53,7 +53,7 @@ body {
   .rowspan-2 {
     grid-gap: $spacer;
 
-    @include breakpoint(map-get($grid-breakpoints, sm)) {
+    @include breakpoint($sm) {
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -61,7 +61,7 @@ body {
   .rowspan-3 {
     grid-gap: $spacer;
 
-    @include breakpoint(map-get($grid-breakpoints, sm)) {
+    @include breakpoint($sm) {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -69,11 +69,11 @@ body {
   .rowspan-4 {
     grid-gap: $spacer;
 
-    @include breakpoint(map-get($grid-breakpoints, sm)) {
+    @include breakpoint($sm) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @include breakpoint(map-get($grid-breakpoints, md)) {
+    @include breakpoint($md) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -81,15 +81,15 @@ body {
   .rowspan-6 {
     grid-gap: $spacer;
 
-    @include breakpoint(map-get($grid-breakpoints, sm)) {
+    @include breakpoint($sm) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @include breakpoint(map-get($grid-breakpoints, md)) {
+    @include breakpoint($md) {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    @include breakpoint(map-get($grid-breakpoints, lg)) {
+    @include breakpoint($lg) {
       grid-template-columns: repeat(6, 1fr);
     }
   }
