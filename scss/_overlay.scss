@@ -7,6 +7,8 @@ input[type="checkbox"] {
 }
 
 .grid-overlay {
+  display: grid;
+  grid-template-rows: minmax(100%, auto);
   position: absolute;
   top: 0;
   left: 0;
@@ -14,27 +16,39 @@ input[type="checkbox"] {
   bottom: 0;
 
   &-2 {
-    grid-template-columns: repeat(2, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &-3 {
-    grid-template-columns: repeat(3, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &-4 {
-    grid-template-columns: repeat(4, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &-5 {
-    grid-template-columns: repeat(5, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
 
   &-6 {
-    grid-template-columns: repeat(6, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   &-12 {
-    grid-template-columns: repeat(12, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(12, 1fr);
+    }
   }
 
   > div {

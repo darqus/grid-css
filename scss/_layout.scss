@@ -49,6 +49,14 @@ footer {
     > div:last-child {
       display: grid;
       justify-content: end;
+
+      @include breakpoint($sm) {
+        display: initial;
+        justify-content: initial;
+      }
+    }
+    @include breakpoint($sm) {
+      display: initial;
     }
   }
 }

@@ -46,6 +46,21 @@ footer .row-2 > div:last-child {
       -ms-flex-pack: end;
           justify-content: end;
 }
+@media (min-width: 576px) {
+  header .row-2 > div:last-child,
+footer .row-2 > div:last-child {
+    display: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+}
+@media (min-width: 576px) {
+  header .row-2,
+footer .row-2 {
+    display: initial;
+  }
+}
 
 .container {
   display: grid;
@@ -139,29 +154,43 @@ input[type=checkbox] {
 }
 
 .grid-overlay {
+  display: grid;
+  grid-template-rows: minmax(100%, auto);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-.grid-overlay-2 {
-  grid-template-columns: repeat(2, 1fr);
+@media (min-width: 576px) {
+  .grid-overlay-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-.grid-overlay-3 {
-  grid-template-columns: repeat(3, 1fr);
+@media (min-width: 576px) {
+  .grid-overlay-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-.grid-overlay-4 {
-  grid-template-columns: repeat(4, 1fr);
+@media (min-width: 576px) {
+  .grid-overlay-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
-.grid-overlay-5 {
-  grid-template-columns: repeat(5, 1fr);
+@media (min-width: 576px) {
+  .grid-overlay-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
-.grid-overlay-6 {
-  grid-template-columns: repeat(6, 1fr);
+@media (min-width: 576px) {
+  .grid-overlay-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
-.grid-overlay-12 {
-  grid-template-columns: repeat(12, 1fr);
+@media (min-width: 576px) {
+  .grid-overlay-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
 .grid-overlay > div {
   background-color: rgba(0, 0, 200, 0.1);
