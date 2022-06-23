@@ -5,7 +5,7 @@ Basic usage CSS Grid on your project
 
 - Grid CSS template sticky Header and Footer.
 - Grid system implemented only Grid CSS.
-- Grid system use 2, 3, 4 and 6 columns.
+- Grid system use dinamic 2, 3, 4, 5, 6 or 12 columns.
 - Containers not use padding, only Grid CSS magic
 - Use SASS mixin to implement media query to view on all devices
 - Use mobile first design pattern
