@@ -1,27 +1,31 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
   display: grid;
   grid-template-areas: "header" "content";
   grid-template-rows: auto 1fr;
-  height: 100vh;
+  height: 100%;
 }
 body > header {
   grid-area: header;
 }
-body .sections-content {
+body main {
   position: relative;
   grid-area: content;
 }
 @media (min-width: 576px) {
-  body .sections-content {
+  body main {
     overflow-y: auto;
   }
 }
-body .sections-content section:nth-child(even) {
+body main section:nth-child(even) {
   background-color: #ddd;
 }
-body .sections-content section:nth-child(odd) {
+body main section:nth-child(odd) {
   background-color: #ccc;
 }
 
@@ -36,52 +40,56 @@ body .sections-content section:nth-child(odd) {
   grid-area: row;
   grid-gap: 1rem;
 }
-.container .rowspan-2 {
-  grid-gap: 1rem;
+.container > .row-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
-@media (min-width: 576px) {
-  .container .rowspan-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.container > .row-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
-.container .rowspan-3 {
-  grid-gap: 1rem;
+.container > .row-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
-@media (min-width: 576px) {
-  .container .rowspan-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.container > .row-5 {
+  grid-template-columns: repeat(5, 1fr);
 }
-.container .rowspan-4 {
-  grid-gap: 1rem;
+.container > .row-6 {
+  grid-template-columns: repeat(6, 1fr);
 }
-@media (min-width: 576px) {
-  .container .rowspan-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.container > .row-12 {
+  grid-template-columns: repeat(12, 1fr);
 }
-@media (min-width: 768px) {
-  .container .rowspan-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.container .col {
+  grid-template-columns: minmax(0, auto);
 }
-.container .rowspan-6 {
-  grid-gap: 1rem;
+.container .colspan-2 {
+  grid-column: span 2;
 }
-@media (min-width: 576px) {
-  .container .rowspan-6 {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.container .colspan-2 {
+  grid-column: span 2;
 }
-@media (min-width: 768px) {
-  .container .rowspan-6 {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.container .colspan-4 {
+  grid-column: span 4;
 }
-@media (min-width: 992px) {
-  .container .rowspan-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
+.container .colspan-5 {
+  grid-column: span 5;
+}
+.container .colspan-6 {
+  grid-column: span 6;
+}
+.container .colspan-7 {
+  grid-column: span 7;
+}
+.container .colspan-8 {
+  grid-column: span 8;
+}
+.container .colspan-9 {
+  grid-column: span 9;
+}
+.container .colspan-10 {
+  grid-column: span 10;
+}
+.container .colspan-11 {
+  grid-column: span 11;
 }
 .container h1,
 .container h2,

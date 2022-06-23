@@ -1,4 +1,4 @@
-# grid-css 1.0.0
+# grid-css 2.0.0
 
 Basic usage CSS Grid on your project
 
@@ -12,3 +12,5 @@ Basic usage CSS Grid on your project
 
 
 [CSS grid layout](http://en.wikipedia.org/wiki/CSS_grid_layout)
+
+- add Grid system row-2, row-3, row-4, row-5, row-6, row-12

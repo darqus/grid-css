@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -6,13 +10,13 @@ body {
     "header"
     "content";
   grid-template-rows: auto 1fr;
-  height: 100vh;
+  height: 100%;
 
   > header {
     grid-area: header;
   }
 
-  .sections-content {
+  main {
     position: relative;
     grid-area: content;
 
@@ -50,48 +54,72 @@ body {
     grid-gap: $spacer;
   }
 
-  .rowspan-2 {
-    grid-gap: $spacer;
-
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  > .row-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .rowspan-3 {
-    grid-gap: $spacer;
-
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  > .row-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .rowspan-4 {
-    grid-gap: $spacer;
-
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include breakpoint($md) {
-      grid-template-columns: repeat(4, 1fr);
-    }
+  > .row-4 {
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  .rowspan-6 {
-    grid-gap: $spacer;
+  > .row-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  > .row-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
 
-    @include breakpoint($md) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  > .row-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
 
-    @include breakpoint($lg) {
-      grid-template-columns: repeat(6, 1fr);
-    }
+  .col {
+    grid-template-columns: minmax($xs, auto);
+  }
+
+  .colspan-2 {
+    grid-column: span 2;
+  }
+
+  .colspan-2 {
+    grid-column: span 2;
+  }
+
+  .colspan-4 {
+    grid-column: span 4;
+  }
+
+  .colspan-5 {
+    grid-column: span 5;
+  }
+
+  .colspan-6 {
+    grid-column: span 6;
+  }
+
+  .colspan-7 {
+    grid-column: span 7;
+  }
+
+  .colspan-8 {
+    grid-column: span 8;
+  }
+
+  .colspan-9 {
+    grid-column: span 9;
+  }
+
+  .colspan-10 {
+    grid-column: span 10;
+  }
+
+  .colspan-11 {
+    grid-column: span 11;
   }
 
   h1,
