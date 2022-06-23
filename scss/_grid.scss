@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content";
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+
+  > header {
+    grid-area: header;
+  }
+
+  .sections-content {
+    position: relative;
+    grid-area: content;
+
+   @include breakpoint(map-get($grid-breakpoints, sm)) {
+      overflow-y: auto;
+    }
+
+    section {
+      &:nth-child(even) {
+        background-color: #ddd;
+      }
+
+      &:nth-child(odd) {
+        background-color: #ccc;
+      }
+    }
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    ". . ."
+    ". row ."
+    ". . .";
+  grid-template-columns:
+    1fr
+    minmax(map-get($grid-breakpoints, xs), map-get($grid-breakpoints, xl))
+    1fr;
+  grid-gap: $spacer;
+
+  > div {
+    display: grid;
+    grid-area: row;
+    grid-gap: $spacer;
+  }
+
+  .rowspan-2 {
+    grid-gap: $spacer;
+
+    @include breakpoint(map-get($grid-breakpoints, sm)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .rowspan-3 {
+    grid-gap: $spacer;
+
+    @include breakpoint(map-get($grid-breakpoints, sm)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .rowspan-4 {
+    grid-gap: $spacer;
+
+    @include breakpoint(map-get($grid-breakpoints, sm)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(map-get($grid-breakpoints, md)) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .rowspan-6 {
+    grid-gap: $spacer;
+
+    @include breakpoint(map-get($grid-breakpoints, sm)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(map-get($grid-breakpoints, md)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint(map-get($grid-breakpoints, lg)) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+}
+
+header,
+footer {
+  background-color: #000;
+  color: #fff;
+
+  .row {
+    display: grid;
+    place-items: center;
+  }
+}
