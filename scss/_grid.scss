@@ -1,41 +1,3 @@
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "content";
-  grid-template-rows: auto 1fr;
-  height: 100%;
-
-  > header {
-    grid-area: header;
-  }
-
-  main {
-    position: relative;
-    grid-area: content;
-
-    @include breakpoint($sm) {
-      overflow-y: auto;
-    }
-
-    section {
-      &:nth-child(even) {
-        background-color: #ddd;
-      }
-
-      &:nth-child(odd) {
-        background-color: #ccc;
-      }
-    }
-  }
-}
-
 .container {
   display: grid;
   grid-template-areas:
@@ -54,86 +16,6 @@ body {
     grid-gap: $spacer;
   }
 
-  > .row-2 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  > .row-3 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  > .row-4 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  > .row-5 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-
-  > .row-6 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(6, 1fr);
-    }
-  }
-
-  > .row-12 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(12, 1fr);
-    }
-  }
-
-  .col {
-    grid-template-columns: minmax($xs, auto);
-  }
-
-  .colspan-2 {
-    grid-column: span 2;
-  }
-
-  .colspan-2 {
-    grid-column: span 2;
-  }
-
-  .colspan-4 {
-    grid-column: span 4;
-  }
-
-  .colspan-5 {
-    grid-column: span 5;
-  }
-
-  .colspan-6 {
-    grid-column: span 6;
-  }
-
-  .colspan-7 {
-    grid-column: span 7;
-  }
-
-  .colspan-8 {
-    grid-column: span 8;
-  }
-
-  .colspan-9 {
-    grid-column: span 9;
-  }
-
-  .colspan-10 {
-    grid-column: span 10;
-  }
-
-  .colspan-11 {
-    grid-column: span 11;
-  }
-
   h1,
   h2,
   p {
@@ -141,19 +23,88 @@ body {
   }
 }
 
-header,
-footer {
-  background-color: #000;
-  color: #fff;
+.row {
+
+  &-2 {
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &-3 {
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &-4 {
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &-5 {
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  &-6 {
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  &-12 {
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
 }
 
-header,
-footer {
-  .row-2 {
-    display: grid;
-    > div:last-child {
-      display: grid;
-      justify-content: end;
-    }
+.col {
+  grid-template-columns: minmax($xs, auto);
+}
+
+.colspan {
+
+  &-2 {
+    grid-column: span 2;
+  }
+
+  &-2 {
+    grid-column: span 2;
+  }
+
+  &-4 {
+    grid-column: span 4;
+  }
+
+  &-5 {
+    grid-column: span 5;
+  }
+
+  &-6 {
+    grid-column: span 6;
+  }
+
+  &-7 {
+    grid-column: span 7;
+  }
+
+  &-8 {
+    grid-column: span 8;
+  }
+
+  &-9 {
+    grid-column: span 9;
+  }
+
+  &-10 {
+    grid-column: span 10;
+  }
+
+  &-11 {
+    grid-column: span 11;
   }
 }
