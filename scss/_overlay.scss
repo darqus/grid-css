@@ -1,0 +1,48 @@
+.relative {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  > div {
+    background-color: rgba(0, 0, 200, 0.1);
+    // display: none;
+  }
+
+  &.d-none {
+    display: none;
+  }
+}

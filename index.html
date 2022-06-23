@@ -6,14 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel=icon type=image/ico href=favicon.svg>
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
   <title>Grid CSS template sticky Header and Footer</title>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <div class="nav">
-        LOGO
+      <div class="row-2">
+        <div>
+          LOGO
+        </div>
+        <div>
+          <input type="checkbox">
+        </div>
       </div>
     </div>
   </header>
@@ -45,39 +51,62 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-2">
           <div>col-1 Lorem ipsum dolor sit amet.</div>
           <div>col-2 Lorem ipsum dolor sit amet.</div>
+        </div>
+
+        <div class="grid-overlay d-none grid-overlay-2">
+          <div></div>
+          <div></div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container">
+      <div class="container relative">
         <div>
           <h2>Grid system row-3</h2>
         </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-3">
           <div class="colspan-2">col-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, ab totam ex assumenda laboriosam necessitatibus!</div>
           <div>col Lorem ipsum dolor sit amet.</div>
         </div>
+
+        <div class="grid-overlay d-none grid-overlay-3">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-3">
           <div>col Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, ab totam ex assumenda laboriosam necessitatibus!</div>
           <div>col Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum dignissimos voluptate sed ipsa sit?</div>
         </div>
+
+        <div class="grid-overlay d-none grid-overlay-3">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-3">
           <div>col Lorem ipsum dolor sit amet.</div>
           <div class="colspan-2">col-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, ab totam ex assumenda laboriosam necessitatibus!</div>
+        </div>
+
+        <div class="grid-overlay d-none grid-overlay-3">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </section>
@@ -89,28 +118,49 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-4">
           <div class="colspan-2">col-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, ab totam ex assumenda laboriosam necessitatibus!</div>
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
         </div>
+
+        <div class="grid-overlay d-none grid-overlay-4">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-4">
           <div>col Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, ab totam ex assumenda laboriosam necessitatibus!</div>
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
         </div>
+
+        <div class="grid-overlay d-none grid-overlay-4">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-4">
           <div>col Lorem ipsum dolor sit amet.</div>
           <div class="colspan-2">col-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, ab totam ex assumenda laboriosam necessitatibus!</div>
           <div>col Lorem ipsum dolor sit amet.</div>
+        </div>
+
+        <div class="grid-overlay d-none grid-overlay-4">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </section>
@@ -122,7 +172,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-5">
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
@@ -130,15 +180,31 @@
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
         </div>
+
+        <div class="grid-overlay d-none grid-overlay-5">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-5">
           <div>col Lorem ipsum dolor sit amet.</div>
-          <div class="colspan-2">col-2 Lorem ipsum dolor sit amet.</div>
+          <div class="colspan-2">col-2 Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
+        </div>
+
+        <div class="grid-overlay d-none grid-overlay-5">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </section>
@@ -150,7 +216,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-6">
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
@@ -159,9 +225,18 @@
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
         </div>
+
+        <div class="grid-overlay d-none grid-overlay-6">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-6">
           <div>col Lorem ipsum dolor sit amet.</div>
           <div class="colspan-2">col-2 Lorem ipsum dolor sit amet.</div>
@@ -169,6 +244,15 @@
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
+        </div>
+
+        <div class="grid-overlay d-none grid-overlay-6">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </section>
@@ -180,13 +264,28 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container relative">
         <div class="row-12">
           <div class="colspan-2">col-2 Lorem ipsum dolor sit amet.</div>
           <div class="colspan-6">col-6 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quia nulla blanditiis?</div>
           <div>col Lorem ipsum dolor sit amet.</div>
           <div class="colspan-2">col-2 Lorem ipsum dolor sit amet.</div>
           <div>col Lorem ipsum dolor sit amet.</div>
+        </div>
+
+        <div class="grid-overlay d-none grid-overlay-12">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </section>

@@ -103,12 +103,54 @@ footer {
   color: #fff;
 }
 
+header .row-2,
 footer .row-2 {
   display: grid;
 }
+header .row-2 > div:last-child,
 footer .row-2 > div:last-child {
   display: grid;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+
+.relative {
+  position: relative;
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.grid-overlay-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-overlay-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-overlay-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-overlay-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-overlay-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-overlay-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid-overlay > div {
+  background-color: rgba(0, 0, 200, 0.1);
+}
+.grid-overlay.d-none {
+  display: none;
 }
