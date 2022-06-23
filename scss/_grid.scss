@@ -20,7 +20,7 @@ body {
     position: relative;
     grid-area: content;
 
-   @include breakpoint($sm) {
+    @include breakpoint($sm) {
       overflow-y: auto;
     }
 
@@ -55,27 +55,39 @@ body {
   }
 
   > .row-2 {
-    grid-template-columns: repeat(2, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   > .row-3 {
-    grid-template-columns: repeat(3, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   > .row-4 {
-    grid-template-columns: repeat(4, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   > .row-5 {
-    grid-template-columns: repeat(5, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
 
   > .row-6 {
-    grid-template-columns: repeat(6, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   > .row-12 {
-    grid-template-columns: repeat(12, 1fr);
+    @include breakpoint($sm) {
+      grid-template-columns: repeat(12, 1fr);
+    }
   }
 
   .col {

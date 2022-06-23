@@ -40,23 +40,35 @@ body main section:nth-child(odd) {
   grid-area: row;
   grid-gap: 1rem;
 }
-.container > .row-2 {
-  grid-template-columns: repeat(2, 1fr);
+@media (min-width: 576px) {
+  .container > .row-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-.container > .row-3 {
-  grid-template-columns: repeat(3, 1fr);
+@media (min-width: 576px) {
+  .container > .row-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-.container > .row-4 {
-  grid-template-columns: repeat(4, 1fr);
+@media (min-width: 576px) {
+  .container > .row-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
-.container > .row-5 {
-  grid-template-columns: repeat(5, 1fr);
+@media (min-width: 576px) {
+  .container > .row-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
-.container > .row-6 {
-  grid-template-columns: repeat(6, 1fr);
+@media (min-width: 576px) {
+  .container > .row-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
-.container > .row-12 {
-  grid-template-columns: repeat(12, 1fr);
+@media (min-width: 576px) {
+  .container > .row-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
 .container .col {
   grid-template-columns: minmax(0, auto);

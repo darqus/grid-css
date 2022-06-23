@@ -1,4 +1,4 @@
-# grid-css 2.1.0
+# grid-css 2.1.1
 
 Basic usage CSS Grid on your project
 
@@ -15,3 +15,4 @@ Basic usage CSS Grid on your project
 
 - add Grid system row-2, row-3, row-4, row-5, row-6, row-12
 - add grid-overlay
+- add mobile breakpoints
