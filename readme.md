@@ -13,7 +13,7 @@ Basic usage CSS Grid on your project
 
 [CSS grid layout](//en.wikipedia.org/wiki/CSS_grid_layout)
 
-[Preview in Copepen](//codepen.io/darqus/pen/MWQEdEb)
+[Preview in Codepen](//codepen.io/darqus/pen/MWQEdEb)
 
 - add Grid system row-2, row-3, row-4, row-5, row-6, row-12
 - add grid-overlay
