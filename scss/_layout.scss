@@ -22,6 +22,8 @@ body {
 
     @include breakpoint($sm) {
       overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #7777c0 #e0e0e0;
     }
 
     section {
@@ -40,6 +42,7 @@ header,
 footer {
   background-color: #000;
   color: #fff;
+  scrollbar-width: thin;
 }
 
 header,

@@ -129,6 +129,8 @@ body main {
 @media (min-width: 576px) {
   body main {
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #7777c0 #e0e0e0;
   }
 }
 body main section:nth-child(even) {
@@ -142,6 +144,7 @@ header,
 footer {
   background-color: #000;
   color: #fff;
+  scrollbar-width: thin;
 }
 
 header .row-2 > *,
