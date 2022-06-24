@@ -16,9 +16,29 @@ const isScrollableNode = (e) => {
   return (e.offsetHeight < e.scrollHeight)
 }
 
-const isScrollableMain = isScrollableNode(main)
+const resizeHandler = () => {
+  const isScrollableMain = isScrollableNode(main)
 
-if (isScrollableMain) {
-  header.style.overflowY = 'scroll'
-  footer.style.overflowY = 'scroll'
+  if (isScrollableMain) {
+    header.style.overflowY = 'scroll'
+    footer.style.overflowY = 'scroll'
+  } else {
+    header.style.overflowY = 'initial'
+    footer.style.overflowY = 'initial'
+  }
 }
+
+let resizeTimeout
+
+const onResize = () => {
+  if (!resizeTimeout) {
+    resizeTimeout = setTimeout(() => {
+      resizeTimeout = null
+      resizeHandler()
+    }, 66)
+  }
+}
+
+onResize()
+
+window.addEventListener("resize", onResize, false)
