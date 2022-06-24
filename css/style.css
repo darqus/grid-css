@@ -170,16 +170,7 @@ footer .row-2 > :last-child {
 
 .grid-overlay {
   display: grid;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-@media (min-width: 576px) {
-  .grid-overlay {
-    grid-template-rows: minmax(100%, auto);
-  }
+  position: relative;
 }
 @media (min-width: 576px) {
   .grid-overlay-2 {
@@ -211,9 +202,13 @@ footer .row-2 > :last-child {
     grid-template-columns: repeat(12, 1fr);
   }
 }
-.grid-overlay > div::after {
+.grid-overlay > div {
   position: relative;
-  top: -20px;
+}
+.grid-overlay > div::after {
+  position: absolute;
+  top: -16px;
+  left: 0;
 }
 .grid-overlay > div:nth-child(1) {
   color: rgba(218, 112, 214, 0.3);

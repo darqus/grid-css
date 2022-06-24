@@ -8,15 +8,7 @@
 
 .grid-overlay {
   display: grid;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  @include breakpoint($sm) {
-    grid-template-rows: minmax(100%, auto);
-  }
+  position: relative;
 
   @each $name, $row in $rows {
     &#{$pref-hyphen + $name} {
@@ -27,10 +19,12 @@
   }
 
   > div {
+    position: relative;
 
     &::after {
-      position: relative;
-      top: -20px;
+      position: absolute;
+      top: -16px;
+      left: 0;
     }
 
     @each $name, $col in $cols {
