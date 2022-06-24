@@ -40,7 +40,9 @@
 .colspan {
   @each $name, $col in $cols {
     &#{$pref-hyphen + $col} {
-      grid-column: span $col;
+      @include breakpoint($sm) {
+        grid-column: span $col;
+      }
     }
   }
 }

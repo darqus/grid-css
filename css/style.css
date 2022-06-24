@@ -103,41 +103,65 @@ footer .row-2 > div:last-child {
   grid-template-columns: minmax(0, auto);
 }
 
-.colspan-1 {
-  grid-column: span 1;
+@media (min-width: 576px) {
+  .colspan-1 {
+    grid-column: span 1;
+  }
 }
-.colspan-2 {
-  grid-column: span 2;
+@media (min-width: 576px) {
+  .colspan-2 {
+    grid-column: span 2;
+  }
 }
-.colspan-3 {
-  grid-column: span 3;
+@media (min-width: 576px) {
+  .colspan-3 {
+    grid-column: span 3;
+  }
 }
-.colspan-4 {
-  grid-column: span 4;
+@media (min-width: 576px) {
+  .colspan-4 {
+    grid-column: span 4;
+  }
 }
-.colspan-5 {
-  grid-column: span 5;
+@media (min-width: 576px) {
+  .colspan-5 {
+    grid-column: span 5;
+  }
 }
-.colspan-6 {
-  grid-column: span 6;
+@media (min-width: 576px) {
+  .colspan-6 {
+    grid-column: span 6;
+  }
 }
-.colspan-7 {
-  grid-column: span 7;
+@media (min-width: 576px) {
+  .colspan-7 {
+    grid-column: span 7;
+  }
 }
-.colspan-8 {
-  grid-column: span 8;
+@media (min-width: 576px) {
+  .colspan-8 {
+    grid-column: span 8;
+  }
 }
-.colspan-9 {
-  grid-column: span 9;
+@media (min-width: 576px) {
+  .colspan-9 {
+    grid-column: span 9;
+  }
 }
-.colspan-10 {
-  grid-column: span 10;
+@media (min-width: 576px) {
+  .colspan-10 {
+    grid-column: span 10;
+  }
 }
-.colspan-11 {
-  grid-column: span 11;
+@media (min-width: 576px) {
+  .colspan-11 {
+    grid-column: span 11;
+  }
 }
-.colspan-12 {
-  grid-column: span 12;
+@media (min-width: 576px) {
+  .colspan-12 {
+    grid-column: span 12;
+  }
 }
 
 .relative {
@@ -150,12 +174,16 @@ input[type=checkbox] {
 
 .grid-overlay {
   display: grid;
-  grid-template-rows: minmax(100%, auto);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+@media (min-width: 576px) {
+  .grid-overlay {
+    grid-template-rows: minmax(100%, auto);
+  }
 }
 @media (min-width: 576px) {
   .grid-overlay-2 {
@@ -188,115 +216,115 @@ input[type=checkbox] {
   }
 }
 .grid-overlay > div::after {
-  top: -20px;
   position: relative;
+  top: -20px;
 }
 .grid-overlay > div:nth-child(1) {
   color: rgba(218, 112, 214, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(218, 112, 214, 0.1);
 }
 .grid-overlay > div:nth-child(1)::after {
+  font-size: 0.8rem;
   content: "col-1";
 }
 .grid-overlay > div:nth-child(2) {
   color: rgba(250, 128, 114, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(250, 128, 114, 0.1);
 }
 .grid-overlay > div:nth-child(2)::after {
+  font-size: 0.8rem;
   content: "col-2";
 }
 .grid-overlay > div:nth-child(3) {
   color: rgba(255, 165, 0, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 165, 0, 0.1);
 }
 .grid-overlay > div:nth-child(3)::after {
+  font-size: 0.8rem;
   content: "col-3";
 }
 .grid-overlay > div:nth-child(4) {
   color: rgba(255, 215, 0, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 215, 0, 0.1);
 }
 .grid-overlay > div:nth-child(4)::after {
+  font-size: 0.8rem;
   content: "col-4";
 }
 .grid-overlay > div:nth-child(5) {
   color: rgba(64, 224, 208, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(64, 224, 208, 0.1);
 }
 .grid-overlay > div:nth-child(5)::after {
+  font-size: 0.8rem;
   content: "col-5";
 }
 .grid-overlay > div:nth-child(6) {
   color: rgba(0, 255, 0, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 255, 0, 0.1);
 }
 .grid-overlay > div:nth-child(6)::after {
+  font-size: 0.8rem;
   content: "col-6";
 }
 .grid-overlay > div:nth-child(7) {
   color: rgba(238, 130, 238, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(238, 130, 238, 0.1);
 }
 .grid-overlay > div:nth-child(7)::after {
+  font-size: 0.8rem;
   content: "col-7";
 }
 .grid-overlay > div:nth-child(8) {
   color: rgba(0, 0, 255, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 255, 0.1);
 }
 .grid-overlay > div:nth-child(8)::after {
+  font-size: 0.8rem;
   content: "col-8";
 }
 .grid-overlay > div:nth-child(9) {
   color: rgba(75, 0, 130, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(75, 0, 130, 0.1);
 }
 .grid-overlay > div:nth-child(9)::after {
+  font-size: 0.8rem;
   content: "col-9";
 }
 .grid-overlay > div:nth-child(10) {
   color: rgba(210, 105, 30, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(210, 105, 30, 0.1);
 }
 .grid-overlay > div:nth-child(10)::after {
+  font-size: 0.8rem;
   content: "col-10";
 }
 .grid-overlay > div:nth-child(11) {
   color: rgba(255, 127, 80, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 127, 80, 0.1);
 }
 .grid-overlay > div:nth-child(11)::after {
+  font-size: 0.8rem;
   content: "col-11";
 }
 .grid-overlay > div:nth-child(12) {
   color: rgba(255, 99, 71, 0.3);
-  font-size: 0.8rem;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 99, 71, 0.1);
 }
 .grid-overlay > div:nth-child(12)::after {
+  font-size: 0.8rem;
   content: "col-12";
 }
 .grid-overlay.d-none {

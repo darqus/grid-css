@@ -8,12 +8,15 @@ input[type="checkbox"] {
 
 .grid-overlay {
   display: grid;
-  grid-template-rows: minmax(100%, auto);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+
+  @include breakpoint($sm) {
+    grid-template-rows: minmax(100%, auto);
+  }
 
   @each $name, $row in $rows {
     &#{$pref-hyphen + $name} {
@@ -24,22 +27,25 @@ input[type="checkbox"] {
   }
 
   > div {
+
     &::after {
-      top: -20px;
       position: relative;
+      top: -20px;
     }
 
     @each $name, $col in $cols {
       &:nth-child(#{$col}) {
         color: rgba($name, 0.3);
-        font-size: 0.8rem;
         text-shadow: 0 0 6px rgba(0, 0, 0, .3);
         background-color: rgba($name, 0.1);
+
         &::after {
+          font-size: 0.8rem;
           content: $pref-col + $col;
         }
       }
     }
+
   }
 
   &.d-none {

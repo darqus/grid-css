@@ -19,3 +19,4 @@ Basic usage CSS Grid on your project
 - add grid-overlay
 - add mobile breakpoints
 - break layout and grid
+- fix overlay in mobile view
