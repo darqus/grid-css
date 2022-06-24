@@ -19,6 +19,9 @@ $md: map-get($grid-breakpoints, md);
 $lg: map-get($grid-breakpoints, lg);
 $xl: map-get($grid-breakpoints, xl);
 
+$overflow-color-foreground: #7777c0;
+$overflow-color-background: #e0e0e0;
+
 $section-even-color: #ddd;
 $section-odd-color: #ccc;
 
