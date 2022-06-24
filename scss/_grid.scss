@@ -10,7 +10,7 @@
     1fr;
   grid-gap: $spacer;
 
-  > div {
+  > * {
     display: grid;
     grid-area: row;
     grid-gap: $spacer;
@@ -31,10 +31,6 @@
       }
     }
   }
-}
-
-.col {
-  grid-template-columns: minmax($xs, auto);
 }
 
 .colspan {

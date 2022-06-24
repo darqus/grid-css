@@ -19,6 +19,9 @@ $md: map-get($grid-breakpoints, md);
 $lg: map-get($grid-breakpoints, lg);
 $xl: map-get($grid-breakpoints, xl);
 
+$section-even-color: #ddd;
+$section-odd-color: #ccc;
+
 $rows: (
   2: 2,
   3: 3,

@@ -57,7 +57,7 @@ footer .row-2 > div:last-child {
   grid-template-columns: 1fr minmax(0, 1200px) 1fr;
   grid-gap: 1rem;
 }
-.container > div {
+.container > * {
   display: grid;
   grid-area: row;
   grid-gap: 1rem;
@@ -97,10 +97,6 @@ footer .row-2 > div:last-child {
   .row-12 {
     grid-template-columns: repeat(12, 1fr);
   }
-}
-
-.col {
-  grid-template-columns: minmax(0, auto);
 }
 
 @media (min-width: 576px) {
