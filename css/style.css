@@ -168,7 +168,7 @@ footer .row-2 > div:last-child {
   position: relative;
 }
 
-input[type=checkbox] {
+.pointer > * {
   cursor: pointer;
 }
 
