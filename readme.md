@@ -1,6 +1,4 @@
-# grid-system 2.1.1
-
-Basic usage CSS Grid on your project
+# Grid System on CSS Grid 2.1.1 🥅🛸🏴‍☠️
 
 - Grid CSS template sticky Header and Footer.
 - Grid system implemented only Grid CSS.
@@ -8,7 +6,7 @@ Basic usage CSS Grid on your project
 - Containers not use padding, only Grid CSS magic
 - Use SASS mixin to implement media query to view on all devices
 - Use mobile first design pattern
-- Click on checkbox to toogle see Grid
+- Click on checkbox to toggle see Grid
 
 
 [CSS grid layout](//en.wikipedia.org/wiki/CSS_grid_layout)
