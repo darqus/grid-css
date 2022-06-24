@@ -7,7 +7,7 @@ const onChange = () => Array.from(overlays).forEach((item) => item.classList.tog
 checkbox?.addEventListener('change', onChange)
 
 
-// add CSS property "overflow: scroll;" to header and footer if main is scrollable
+// add CSS property "overflow-y: scroll;" to header and footer if main is scrollable horizontally
 const header = document.getElementsByTagName('header')[0]
 const main = document.getElementsByTagName('main')[0]
 const footer = document.getElementsByTagName('footer')[0]
