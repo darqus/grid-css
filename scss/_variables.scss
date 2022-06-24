@@ -18,3 +18,30 @@ $sm: map-get($grid-breakpoints, sm);
 $md: map-get($grid-breakpoints, md);
 $lg: map-get($grid-breakpoints, lg);
 $xl: map-get($grid-breakpoints, xl);
+
+$rows: (
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  12: 12
+);
+
+$pref-hyphen: "-";
+$pref-col: "col-";
+
+$cols: (
+  orchid: 1,
+  salmon: 2,
+  orange: 3,
+  gold: 4,
+  turquoise: 5,
+  lime: 6,
+  violet: 7,
+  blue: 8,
+  indigo: 9,
+  chocolate: 10,
+  coral: 11,
+  tomato: 12
+);

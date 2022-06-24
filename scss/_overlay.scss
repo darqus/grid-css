@@ -15,44 +15,31 @@ input[type="checkbox"] {
   right: 0;
   bottom: 0;
 
-  &-2 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  &-3 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  &-4 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  &-5 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-
-  &-6 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(6, 1fr);
-    }
-  }
-
-  &-12 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(12, 1fr);
+  @each $name, $row in $rows {
+    &#{$pref-hyphen + $name} {
+      @include breakpoint($sm) {
+        grid-template-columns: repeat($row, 1fr);
+      }
     }
   }
 
   > div {
-    background-color: rgba(0, 0, 200, 0.1);
+    &::after {
+      top: -20px;
+      position: relative;
+    }
+
+    @each $name, $col in $cols {
+      &:nth-child(#{$col}) {
+        color: rgba($name, 0.3);
+        font-size: 0.8rem;
+        text-shadow: 0 0 6px rgba(0, 0, 0, .3);
+        background-color: rgba($name, 0.1);
+        &::after {
+          content: $pref-col + $col;
+        }
+      }
+    }
   }
 
   &.d-none {

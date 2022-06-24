@@ -24,40 +24,11 @@
 }
 
 .row {
-
-  &-2 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  &-3 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  &-4 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  &-5 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-
-  &-6 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(6, 1fr);
-    }
-  }
-
-  &-12 {
-    @include breakpoint($sm) {
-      grid-template-columns: repeat(12, 1fr);
+  @each $name, $row in $rows {
+    &#{$pref-hyphen + $name} {
+      @include breakpoint($sm) {
+        grid-template-columns: repeat($row, 1fr);
+      }
     }
   }
 }
@@ -67,44 +38,9 @@
 }
 
 .colspan {
-
-  &-2 {
-    grid-column: span 2;
-  }
-
-  &-2 {
-    grid-column: span 2;
-  }
-
-  &-4 {
-    grid-column: span 4;
-  }
-
-  &-5 {
-    grid-column: span 5;
-  }
-
-  &-6 {
-    grid-column: span 6;
-  }
-
-  &-7 {
-    grid-column: span 7;
-  }
-
-  &-8 {
-    grid-column: span 8;
-  }
-
-  &-9 {
-    grid-column: span 9;
-  }
-
-  &-10 {
-    grid-column: span 10;
-  }
-
-  &-11 {
-    grid-column: span 11;
+  @each $name, $col in $cols {
+    &#{$pref-hyphen + $col} {
+      grid-column: span $col;
+    }
   }
 }
