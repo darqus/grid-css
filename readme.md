@@ -13,6 +13,8 @@
 
 [Preview in Codepen](//codepen.io/darqus/pen/MWQEdEb)
 
+## Changelog
+
 - add Grid system row-2, row-3, row-4, row-5, row-6, row-12
 - add grid-overlay
 - add mobile breakpoints
