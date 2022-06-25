@@ -2,10 +2,10 @@
 const checkbox = document.querySelector('input[type="checkbox"]')
 const overlays = document.querySelectorAll('.grid-overlay')
 
-const onChange = () => Array.from(overlays).forEach((item) => item.classList.toggle('d-none'))
+const onChange = () =>
+  Array.from(overlays).forEach((item) => item.classList.toggle('d-none'))
 
 checkbox?.addEventListener('change', onChange)
-
 
 // add CSS property "overflow-y: scroll;" to header and footer if main is scrollable horizontally
 const htmlTag = document.getElementsByTagName('html')[0]
@@ -14,7 +14,7 @@ const mainTag = document.getElementsByTagName('main')[0]
 const footerTag = document.getElementsByTagName('footer')[0]
 
 const isScrollableNode = (e) => {
-  return (e.offsetHeight < e.scrollHeight)
+  return e.offsetHeight < e.scrollHeight
 }
 
 const resizeHandler = () => {
@@ -48,4 +48,4 @@ const onResize = () => {
 
 onResize()
 
-window.addEventListener("resize", onResize, false)
+window.addEventListener('resize', onResize, false)
