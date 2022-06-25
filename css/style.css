@@ -109,9 +109,6 @@
 
 html {
   height: 100%;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #7777c0 #e0e0e0;
 }
 
 body {
