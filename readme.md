@@ -1,4 +1,4 @@
-# Grid System on CSS Grid 2.1.1 🥅🛸🏴‍☠️
+# Grid System on CSS Grid 2.3.0 🥅🛸🏴‍☠️
 
 - Grid CSS template sticky Header and Footer.
 - Grid system implemented only Grid CSS.
