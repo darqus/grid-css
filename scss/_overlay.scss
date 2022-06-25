@@ -21,7 +21,7 @@
   > div {
     position: relative;
 
-    &::after {
+    &::before {
       position: absolute;
       top: -16px;
       left: 0;
@@ -33,7 +33,9 @@
         text-shadow: 0 0 6px rgba(0, 0, 0, .3);
         background-color: rgba($name, 0.1);
 
-        &::after {
+        &::before {
+          color: rgba($name, 0.8);
+          font-weight: bold;
           font-size: 0.8rem;
           content: $pref-col + $col;
         }
