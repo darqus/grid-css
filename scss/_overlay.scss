@@ -23,7 +23,7 @@
 
     &::before {
       position: absolute;
-      top: -16px;
+      top: -24px;
       left: 0;
     }
 
@@ -35,9 +35,11 @@
 
         &::before {
           color: rgba($name, 0.8);
+          background-color: rgba($name, 0.1);
           font-weight: bold;
           font-size: 0.8rem;
           content: $pref-col + $col;
+          padding: 4px 8px;
         }
       }
     }
